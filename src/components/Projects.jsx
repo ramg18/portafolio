@@ -16,7 +16,7 @@ const projects = [
     tech: ["Laravel", "MySQL", "vue2"],
     role: "Full Stack Developer",
     status: "Producción",
-    image: "/images/projects/crawford.jpg",
+    image: "/images/projects/aa.jpg",
     imageAlt: "Captura de pantalla de la plataforma Compramos tu usado mostrando la interfaz de valoración de vehículos"
   },
   {
@@ -43,7 +43,7 @@ const projects = [
     tech: ["Laravel", "MySQL", "Angular"],
     role: "Full Stack Developer",
     status: "Producción",
-    image: "/images/projects/latamsec.jpg",
+    image: "/images/projects/aa.jpg",
     imageAlt: "Dashboard de LatamSec con gestión de turnos y administración de personal de seguridad"
   },
   {
