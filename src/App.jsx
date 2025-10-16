@@ -73,7 +73,7 @@ export default function App() {
         id="home"
         className="relative flex flex-col items-center justify-center text-center h-screen px-6 pt-24 overflow-hidden"
         style={{
-          backgroundImage: `url('/images/backgrounds/hero-bg-desktop.jpg')`,
+          backgroundImage: `url('/portafolio/images/backgrounds/hero-bg-desktop.jpg')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'

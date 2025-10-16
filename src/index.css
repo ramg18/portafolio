@@ -67,9 +67,3 @@
   background-size: 400% 400%;
   animation: gradient 3s ease infinite;
 }
-
-
-body {
-  background-color: red !important;
-  color: white !important;
-}

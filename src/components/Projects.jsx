@@ -7,7 +7,7 @@ const projects = [
     tech: ["Laravel", "MySQL", "Angular", "Ionic"],
     role: "Full Stack Developer",
     status: "Producción",
-    image: "/images/projects/usados.jpg",
+    image: "/portafolio/images/projects/usados.jpg",
     imageAlt: "Captura de pantalla de la plataforma Compramos tu usado mostrando la interfaz de valoración de vehículos"
   },
   {
@@ -16,7 +16,7 @@ const projects = [
     tech: ["Laravel", "MySQL", "vue2"],
     role: "Full Stack Developer",
     status: "Producción",
-    image: "/images/projects/aa.jpg",
+    image: "/portafolio/images/projects/aa.jpg",
     imageAlt: "Captura de pantalla de la plataforma Compramos tu usado mostrando la interfaz de valoración de vehículos"
   },
   {
@@ -25,7 +25,7 @@ const projects = [
     tech: ["Laravel", "MySQL", "Ionic", "Angular"],
     role: "Full Stack Developer",
     status: "Publicada",
-    image: "/images/projects/lulosaurio.jpg",
+    image: "/portafolio/images/projects/lulosaurio.jpg",
     imageAlt: "Interfaz de la aplicación móvil Lulosaurio con audiolibros para niños y sistema de suscripción"
   },
   {
@@ -34,7 +34,7 @@ const projects = [
     tech: ["Laravel", "MySQL", "Angular", "Ionic"],
     role: "Full Stack Developer",
     status: "Desarrollo",
-    image: "/images/projects/xgoal.jpg",
+    image: "/portafolio/images/projects/xgoal.jpg",
     imageAlt: "Aplicación móvil XGoal mostrando perfiles de jóvenes futbolistas y conexión con clubes"
   },
   {
@@ -43,7 +43,7 @@ const projects = [
     tech: ["Laravel", "MySQL", "Angular"],
     role: "Full Stack Developer",
     status: "Producción",
-    image: "/images/projects/aa.jpg",
+    image: "/portafolio/images/projects/aa.jpg",
     imageAlt: "Dashboard de LatamSec con gestión de turnos y administración de personal de seguridad"
   },
   {
@@ -52,7 +52,7 @@ const projects = [
     tech: ["Laravel", "MySQL", "Angular"],
     role: "Full Stack Developer",
     status: "Producción",
-    image: "/images/projects/aa.jpg",
+    image: "/portafolio/images/projects/aa.jpg",
     imageAlt: "Sistema de Control de Tributos con seguimiento de impuestos DIAN y gestión documental"
   },
 ];

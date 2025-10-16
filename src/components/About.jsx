@@ -9,7 +9,7 @@ export default function About() {
     email: "rayniermora@gmail.com",
     location: "Colombia",
     birthday: "Marzo 05, 1987",
-    profileImage: "/images/profile/raynier-mora.jpg"
+    profileImage: "/portafolio/images/avatar.jpg"
   };
 
   const socialLinks = [
@@ -70,9 +70,7 @@ export default function About() {
                     src={personalInfo.profileImage}
                     alt={`Foto de perfil de ${personalInfo.name}`}
                     className="w-32 h-32 rounded-2xl object-cover mx-auto shadow-lg"
-                    // onError={(e) => {
-                    //   e.target.src = `${encodeURIComponent(personalInfo.name)}&size=128&background=3B82F6&color=FFFFFF&bold=true`;
-                    // }}
+                    
                   />
                   <div className="absolute -bottom-2 -right-2 w-8 h-8 bg-green-500 rounded-full border-4 border-white"></div>
                 </div>
