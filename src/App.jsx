@@ -18,10 +18,10 @@ export default function App() {
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex space-x-6 text-sm font-medium">
-            <li><a href="#home" className="hover:text-blue-400 transition-colors">Home</a></li>
-            <li><a href="#about" className="hover:text-blue-400 transition-colors">About</a></li>
-            <li><a href="#projects" className="hover:text-blue-400 transition-colors">Projects</a></li>
-            <li><a href="#contact" className="hover:text-blue-400 transition-colors">Contact</a></li>
+            <li><a href="#home" className="hover:text-blue-400 transition-colors">Inicio</a></li>
+            <li><a href="#about" className="hover:text-blue-400 transition-colors">Acerca de mi</a></li>
+            <li><a href="#projects" className="hover:text-blue-400 transition-colors">Proyectos</a></li>
+            <li><a href="#contact" className="hover:text-blue-400 transition-colors">Contacto</a></li>
           </ul>
 
           {/* Mobile Menu Button */}
@@ -87,14 +87,14 @@ export default function App() {
 
         {/* Contenido principal */}
         <div className="relative z-10 max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-white">
-            Hola, soy{" "}
-            <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-              Raynier Mora
-            </span>
+          <h2 className="text-lg font-bold mb-2 leading-tight text-white">
+            Hola, soy
           </h2>
+          <span className="bg-gradient-to-r text-6xl from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-8">
+            Raynier Mora
+          </span>
           
-          <p className="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-8 leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-8 mt-6 leading-relaxed">
             Desarrollador Full Stack especializado en{" "}
             <span className="font-semibold text-white bg-blue-600/20 px-2 py-1 rounded">
               Angular, Ionic y Laravel

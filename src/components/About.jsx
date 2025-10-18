@@ -1,5 +1,17 @@
 import { motion } from "framer-motion";
-import { FaLinkedin, FaGithub, FaTwitter, FaInstagram, FaPhone, FaEnvelope, FaMapMarkerAlt, FaCalendarAlt, FaDownload } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaPhone, FaEnvelope, FaMapMarkerAlt, FaDownload } from "react-icons/fa";
+import { 
+  SiJavascript,
+  SiMysql,
+  SiCss3,
+  SiGit,
+  SiHtml5,
+  SiPhp,
+  SiAngular,
+  SiIonic,
+  SiLaravel,
+  SiNodedotjs
+} from 'react-icons/si';
 
 export default function About() {
   const personalInfo = {
@@ -8,14 +20,12 @@ export default function About() {
     phone: "+57 311 428 5185",
     email: "rayniermora@gmail.com",
     location: "Colombia",
-    birthday: "Marzo 05, 1987",
     profileImage: "/portafolio/images/avatar.jpg"
   };
 
   const socialLinks = [
     { icon: FaLinkedin, url: "www.linkedin.com/in/raynier-mora-gazabon", color: "text-blue-600 hover:text-blue-700" },
-    { icon: FaGithub, url: "https://github.com/ramg18", color: "text-gray-700 hover:text-gray-900" },
-    { icon: FaInstagram, url: "https://www.instagram.com/raymor18/", color: "text-pink-500 hover:text-pink-600" }
+    { icon: FaGithub, url: "https://github.com/ramg18", color: "text-gray-700 hover:text-gray-900" }
   ];
 
   const documents = [
@@ -49,6 +59,79 @@ export default function About() {
       color: "bg-blue-50 border-blue-200"
     }
   ];
+
+  const skills = [
+  {
+    name: "JavaScript",
+    icon: SiJavascript,
+    iconColor: "text-yellow-500",
+    bgColor: "bg-yellow-50 hover:bg-yellow-100",
+    borderColor: "border-yellow-200 hover:border-yellow-300"
+  },
+  {
+    name: "MySQL",
+    icon: SiMysql,
+    iconColor: "text-blue-600",
+    bgColor: "bg-blue-50 hover:bg-blue-100",
+    borderColor: "border-blue-200 hover:border-blue-300"
+  },
+  {
+    name: "CSS3",
+    icon: SiCss3,
+    iconColor: "text-blue-500",
+    bgColor: "bg-blue-50 hover:bg-blue-100",
+    borderColor: "border-blue-200 hover:border-blue-300"
+  },
+  {
+    name: "Git",
+    icon: SiGit,
+    iconColor: "text-orange-600",
+    bgColor: "bg-orange-50 hover:bg-orange-100",
+    borderColor: "border-orange-200 hover:border-orange-300"
+  },
+  {
+    name: "HTML5",
+    icon: SiHtml5,
+    iconColor: "text-orange-500",
+    bgColor: "bg-orange-50 hover:bg-orange-100",
+    borderColor: "border-orange-200 hover:border-orange-300"
+  },
+  {
+    name: "PHP",
+    icon: SiPhp,
+    iconColor: "text-purple-600",
+    bgColor: "bg-purple-50 hover:bg-purple-100",
+    borderColor: "border-purple-200 hover:border-purple-300"
+  },
+  {
+    name: "Angular",
+    icon: SiAngular,
+    iconColor: "text-red-600",
+    bgColor: "bg-red-50 hover:bg-red-100",
+    borderColor: "border-red-200 hover:border-red-300"
+  },
+  {
+    name: "Ionic",
+    icon: SiIonic,
+    iconColor: "text-blue-500",
+    bgColor: "bg-blue-50 hover:bg-blue-100",
+    borderColor: "border-blue-200 hover:border-blue-300"
+  },
+  {
+    name: "Laravel",
+    icon: SiLaravel,
+    iconColor: "text-red-500",
+    bgColor: "bg-red-50 hover:bg-red-100",
+    borderColor: "border-red-200 hover:border-red-300"
+  },
+  {
+    name: "Node.js",
+    icon: SiNodedotjs,
+    iconColor: "text-green-600",
+    bgColor: "bg-green-50 hover:bg-green-100",
+    borderColor: "border-green-200 hover:border-green-300"
+  }
+];
 
   return (
     <section id="about" className="py-20 px-6 bg-gradient-to-br from-gray-50 to-blue-50">
@@ -132,22 +215,26 @@ export default function About() {
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-3 p-3 bg-gray-50 rounded-xl">
-                  <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
-                    <FaCalendarAlt className="w-4 h-4 text-purple-600" />
-                  </div>
-                  <div>
-                    <p className="text-xs text-gray-500 uppercase tracking-wider">Nacimiento</p>
-                    <p className="text-sm font-medium text-gray-700">{personalInfo.birthday}</p>
-                  </div>
-                </div>
+                
               </div>
 
               {/* Download CV Button */}
-              <a href={documents.url} target="_blank" className="w-full bg-blue-600 text-white py-3 px-4 rounded-xl font-medium hover:bg-blue-700 transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl">
-                <FaDownload className="w-4 h-4" />
-                <span>Descargar CV</span>
-              </a>
+              {documents.map((doc, index) => {
+                  const IconComponent = doc.icon;
+                  return (
+                    <a
+                      key={index}
+                      href={doc.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`w-full bg-blue-600 text-white py-3 px-4 rounded-xl font-medium hover:bg-blue-700 transition-all duration-300 flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl`}
+                    >
+                      <FaDownload className="w-4 h-4" />
+                      <span>Descargar CV</span>
+                    </a>
+                  );
+                })}
+              
             </div>
           </motion.div>
 
@@ -215,34 +302,32 @@ export default function About() {
             {/* Skills Progress */}
             <div>
               <h3 className="text-3xl font-bold text-gray-800 mb-8">Tecnologías</h3>
-              
-              <div className="grid md:grid-cols-2 gap-6">
-                {[
-                  { name: "Angular", level: 95, color: "from-red-500 to-red-600" },
-                  { name: "Laravel", level: 90, color: "from-red-600 to-orange-600" },
-                  { name: "Ionic", level: 85, color: "from-blue-500 to-blue-600" },
-                  { name: "MySQL", level: 88, color: "from-blue-600 to-indigo-600" },
-                  { name: "JavaScript", level: 92, color: "from-yellow-500 to-yellow-600" },
-                  { name: "PHP", level: 90, color: "from-purple-500 to-purple-600" }
-                ].map((skill, index) => (
-                  <div key={index} className="space-y-2">
-                    <div className="flex justify-between items-center">
-                      <span className="font-semibold text-gray-700">{skill.name}</span>
-                      <span className="text-sm text-gray-500">{skill.level}%</span>
-                    </div>
-                    <div className="w-full bg-gray-200 rounded-full h-3">
-                      <motion.div
-                        className={`h-3 rounded-full bg-gradient-to-r ${skill.color}`}
-                        initial={{ width: 0 }}
-                        whileInView={{ width: `${skill.level}%` }}
-                        transition={{ duration: 1, delay: index * 0.1 }}
-                        viewport={{ once: true }}
+              <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-5 gap-1 sm:gap-2 lg:gap-3">
+                {skills.map((skill, index) => {
+                  const IconComponent = skill.icon;
+                  return (
+                    <div
+                      key={index}
+                      className={`
+                        w-24 h-24 
+                        rounded-lg 
+                        ${skill.bgColor} 
+                        border-2 ${skill.borderColor}
+                        flex items-center justify-center
+                        transition-all duration-300 
+                        hover:scale-110 hover:shadow-lg
+                        cursor-pointer
+                      `}
+                    >
+                      <IconComponent 
+                        className={`text-4xl ${skill.iconColor}`} 
                       />
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
+
           </motion.div>
         </div>
       </div>
