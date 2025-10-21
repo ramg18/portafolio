@@ -29,7 +29,7 @@ export default function About() {
   ];
 
   const documents = [
-    { url: "/documents/cv.pdf", tipo: "hoja de vida" },
+    { url: "/portafolio/documents/raynier_mora_cv.pdf", tipo: "hoja de vida" },
     
   ];
 
@@ -249,7 +249,7 @@ export default function About() {
             {/* About Section */}
             <div>
               <div className="flex items-center mb-8">
-                <h2 className="text-4xl font-bold text-gray-800">About</h2>
+                <h2 className="text-4xl font-bold text-gray-800">Acerca de mí</h2>
                 <div className="ml-6 flex-1 h-1 bg-gradient-to-r from-blue-500 to-transparent rounded-full"></div>
               </div>
 

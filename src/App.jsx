@@ -19,7 +19,7 @@ export default function App() {
           {/* Desktop Menu */}
           <ul className="hidden md:flex space-x-6 text-sm font-medium">
             <li><a href="#home" className="hover:text-blue-400 transition-colors">Inicio</a></li>
-            <li><a href="#about" className="hover:text-blue-400 transition-colors">Acerca de mi</a></li>
+            <li><a href="#about" className="hover:text-blue-400 transition-colors">Acerca de mí</a></li>
             <li><a href="#projects" className="hover:text-blue-400 transition-colors">Proyectos</a></li>
             <li><a href="#contact" className="hover:text-blue-400 transition-colors">Contacto</a></li>
           </ul>
@@ -59,10 +59,10 @@ export default function App() {
         {menuOpen && (
           <div className="md:hidden bg-[#1E293B] text-white py-3">
             <ul className="flex flex-col items-center space-y-3 font-medium">
-              <li><a href="#home" onClick={() => setMenuOpen(false)} className="hover:text-blue-400 transition-colors">Home</a></li>
-              <li><a href="#about" onClick={() => setMenuOpen(false)} className="hover:text-blue-400 transition-colors">About</a></li>
-              <li><a href="#projects" onClick={() => setMenuOpen(false)} className="hover:text-blue-400 transition-colors">Projects</a></li>
-              <li><a href="#contact" onClick={() => setMenuOpen(false)} className="hover:text-blue-400 transition-colors">Contact</a></li>
+              <li><a href="#home" onClick={() => setMenuOpen(false)} className="hover:text-blue-400 transition-colors">Inicio</a></li>
+              <li><a href="#about" onClick={() => setMenuOpen(false)} className="hover:text-blue-400 transition-colors">Acerca de mí</a></li>
+              <li><a href="#projects" onClick={() => setMenuOpen(false)} className="hover:text-blue-400 transition-colors">Proyectos</a></li>
+              <li><a href="#contact" onClick={() => setMenuOpen(false)} className="hover:text-blue-400 transition-colors">Contacto</a></li>
             </ul>
           </div>
         )}
