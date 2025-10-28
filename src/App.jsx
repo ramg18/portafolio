@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import About from "./components/About.jsx";
 import Projects from "./components/Projects.jsx";
 import Contact from "./components/Contact.jsx";
+import Experience from "./components/Experience.jsx";
 
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -137,6 +138,7 @@ export default function App() {
 
       {/* Components */}
       <About />
+      <Experience />
       <Projects />
       <Contact />
 
